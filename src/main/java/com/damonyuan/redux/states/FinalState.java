@@ -1,8 +1,8 @@
 package com.damonyuan.redux.states;
 
-import com.damonyuan.redux.Action;
-import com.damonyuan.redux.Context;
-import com.damonyuan.redux.State;
+import com.damonyuan.redux.machine.Action;
+import com.damonyuan.redux.machine.Context;
+import com.damonyuan.redux.machine.State;
 
 public class FinalState implements State {
     @Override

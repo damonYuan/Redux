@@ -1,4 +1,4 @@
-package com.damonyuan.redux;
+package com.damonyuan.redux.machine;
 
 public interface Context {
     State getState();

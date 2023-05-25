@@ -1,4 +1,4 @@
-package com.damonyuan.redux;
+package com.damonyuan.redux.machine;
 
 import java.util.Map;
 

@@ -1,6 +1,6 @@
 package com.damonyuan.redux.actions;
 
-import com.damonyuan.redux.Action;
+import com.damonyuan.redux.machine.Action;
 
 import java.util.HashMap;
 import java.util.Map;
