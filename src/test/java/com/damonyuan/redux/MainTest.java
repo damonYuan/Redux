@@ -31,7 +31,9 @@ public class MainTest implements StateContext.Listener {
         context.handle(new AaaToBbbAction());
         Assert.assertEquals(BbbState.class.getSimpleName(), context.getState().getName());
         // handle action: BbbToCccAction
-        context.handle(new BbbToCccAction(new HashMap()));
+        final HashMap<String, String> payload = new HashMap<String, String>();
+        payload.put("hey", "yo");
+        context.handle(new BbbToCccAction(payload));
         Assert.assertEquals(CccState.class.getSimpleName(), context.getState().getName());
         // handle action: CccToFinalAction
         context.handle(new CccToFinalAction());
