@@ -16,6 +16,8 @@ public class ReduxTest implements Store.Listener {
     @Test
     public void testRedux() {
         final MyStore store = new MyStore();
+        System.out.println("[MainTest] Current state: " + store.getState());
+        store.addListener(this);
         Assert.assertEquals(1L, store.getState().longValue());
 
         final PlusAction plusAction = new PlusAction(10L);
