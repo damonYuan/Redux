@@ -17,3 +17,5 @@ Entries at top first row are inputs, entries at the left first column are the st
 # Redux
 
 Java version of Redux implementation.
+
+`newState = reducer.reduce(currentState, payload)`.
