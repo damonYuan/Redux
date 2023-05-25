@@ -1,9 +1,9 @@
-package com.damonyuan.redux;
+package com.damonyuan.redux.machine;
 
-import com.damonyuan.redux.machine.Action;
-import com.damonyuan.redux.machine.Context;
-import com.damonyuan.redux.machine.State;
-import com.damonyuan.redux.states.AaaState;
+import com.damonyuan.redux.machine.interfaces.Action;
+import com.damonyuan.redux.machine.interfaces.Context;
+import com.damonyuan.redux.machine.interfaces.State;
+import com.damonyuan.redux.machine.states.AaaState;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -11,6 +11,7 @@ import java.util.List;
 public class StateContext implements Context {
     private final List<Listener> listeners = new LinkedList<Listener>();
     private State state;
+
     public StateContext() {
         state = new AaaState();
     }
@@ -42,7 +43,7 @@ public class StateContext implements Context {
     }
 
 
-    interface Listener {
+    public interface Listener {
         void onStateUpdated(StateContext context);
     }
 }

@@ -1,4 +1,4 @@
-package com.damonyuan.redux.machine;
+package com.damonyuan.redux.machine.interfaces;
 
 public interface State {
     String getName();

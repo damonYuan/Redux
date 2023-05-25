@@ -1,10 +1,10 @@
-package com.damonyuan.redux.states;
+package com.damonyuan.redux.machine.states;
 
-import com.damonyuan.redux.machine.Action;
-import com.damonyuan.redux.machine.Context;
-import com.damonyuan.redux.machine.State;
-import com.damonyuan.redux.actions.BbbToCccAction;
-import com.damonyuan.redux.actions.BbbToFinalAction;
+import com.damonyuan.redux.machine.actions.BbbToCccAction;
+import com.damonyuan.redux.machine.actions.BbbToFinalAction;
+import com.damonyuan.redux.machine.interfaces.Action;
+import com.damonyuan.redux.machine.interfaces.Context;
+import com.damonyuan.redux.machine.interfaces.State;
 
 import java.util.Map;
 

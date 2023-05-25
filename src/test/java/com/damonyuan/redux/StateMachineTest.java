@@ -1,19 +1,20 @@
 package com.damonyuan.redux;
 
-import com.damonyuan.redux.actions.AaaToBbbAction;
-import com.damonyuan.redux.actions.BbbToCccAction;
-import com.damonyuan.redux.actions.BbbToFinalAction;
-import com.damonyuan.redux.actions.CccToFinalAction;
-import com.damonyuan.redux.states.AaaState;
-import com.damonyuan.redux.states.BbbState;
-import com.damonyuan.redux.states.CccState;
-import com.damonyuan.redux.states.FinalState;
+import com.damonyuan.redux.machine.StateContext;
+import com.damonyuan.redux.machine.actions.AaaToBbbAction;
+import com.damonyuan.redux.machine.actions.BbbToCccAction;
+import com.damonyuan.redux.machine.actions.BbbToFinalAction;
+import com.damonyuan.redux.machine.actions.CccToFinalAction;
+import com.damonyuan.redux.machine.states.AaaState;
+import com.damonyuan.redux.machine.states.BbbState;
+import com.damonyuan.redux.machine.states.CccState;
+import com.damonyuan.redux.machine.states.FinalState;
 import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.HashMap;
 
-public class MainTest implements StateContext.Listener {
+public class StateMachineTest implements StateContext.Listener {
 
     @Test
     public void testStateMachineFlowOne() {
