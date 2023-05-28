@@ -1,12 +1,12 @@
 package com.damonyuan.statepattern.state.states;
 
 import com.damonyuan.statepattern.state.AbsState;
-import com.damonyuan.statepattern.state.interfaces.Context;
+import com.damonyuan.statepattern.state.StateContext;
 
 import java.util.Map;
 
 public class FinalState extends AbsState {
-    public FinalState(Context<AbsState> context) {
+    public FinalState(final StateContext context) {
         super(context);
     }
 
