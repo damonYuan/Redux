@@ -51,3 +51,5 @@ Popular in React JS.
 
 - State + Command -> Action (which might produce events and/or mutate state)
 - Additional features common to Replicated State Machines: Snapshots and Set
+  - If you wanted to capture the state of a state machine without needing to replay every command it had ever received since the initial state, you could take a snapshot of the internal state, save that to some place, and truncate every input command up-to-and-including the snapshot command
+  - Then, when you want the state machine to recover its internal state, you would set the internal state to the value produced by the snapshot.
