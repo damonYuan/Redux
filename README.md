@@ -44,3 +44,10 @@ Popular in React JS.
 
 # another
 [Let’s learn how modern JavaScript frameworks work by building one](https://nolanlawson.com/2023/12/02/lets-learn-how-modern-javascript-frameworks-work-by-building-one/)
+
+# Replicated State Machine
+
+[Replicated State Machines (aeron)](https://aeron.io/docs/distributed-systems-basics/replicated-state-machines/)
+
+- State + Command -> Action (which might produce events and/or mutate state)
+- Additional features common to Replicated State Machines: Snapshots and Set
